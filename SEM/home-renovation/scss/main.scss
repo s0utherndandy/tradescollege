@@ -1,0 +1,101 @@
+$heading-color: rgb(153,0,0);
+
+@import "_functions-and-mixins";
+
+body {
+	font-size: 16px;
+	background: url("../img/bgwelder.jpg") no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $heading-color;
+	margin-top: 0;
+}
+
+h1 {
+	font-size: px-em(36px) !important;
+}
+
+h2 {
+	font-size: px-em(24px);
+}
+
+h3, h4, h5, h6 {
+	font-size: px-em(16px);
+	// margin-top: px-em(20px);
+}
+
+h1 small {
+	color: fade-out($heading-color, 0.2);
+}
+
+ul {
+	padding-left: px-em(17px);
+}
+
+.chat {
+	float: right;
+	margin: px-em(10px) 0;
+
+	@media screen and (max-width: 769px) {
+		display: none;
+	}
+}
+
+.header-logo {
+	max-width: 100%;
+	margin: px-em(10px) 0 px-em(10px) px-em(25px);
+
+	@media screen and (max-width: 769px) {
+		margin: px-em(10px) 0;
+	}
+}
+
+.header-wrap, .content-wrap, .footer-wrap {
+	background-color: #FFF;
+}
+
+.jumbotron.main-heading-jumbotron {
+	padding: px-em(20px);
+	color: $heading-color;
+	background-color: rgb(230,230,230);
+	margin-bottom: px-em(20px);
+}
+
+.vid-wrap {
+	margin-bottom: px-em(10px);
+}
+
+.form-disclaimer {
+	font-size: px-em(12px);
+}
+
+iframe {
+	margin-top: px-em(10px);
+}
+
+.campus-list {
+	list-style: none;
+
+	li {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: px-em(25px);
+		margin-bottom: px-em(25px);
+	}
+
+	h4 {
+		margin: 0;
+		color: $heading-color;
+	}
+}
+
+.footer-wrap {
+	padding-top: px-em(50px);
+}
+
+footer ul {
+	margin-bottom: 0;
+}
